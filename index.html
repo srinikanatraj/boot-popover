@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Popover Project</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+  <!-- JS -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</head>
+
+<body class="bg-light">
+
+<div class="container mt-4 text-center">
+
+  <h2 class="mb-4">📌 Bootstrap Popover Project</h2>
+
+  <!-- 1. Basic Popover -->
+  <h4>1. Basic Popover</h4>
+  <button class="btn btn-primary"
+    data-toggle="popover"
+    title="Popover Title"
+    data-content="This is a basic popover">
+    Click Me
+  </button>
+
+  <br><br>
+
+  <!-- 2. Popover Positions -->
+  <h4>2. Popover Positions</h4>
+  <button class="btn btn-success"
+    data-toggle="popover"
+    data-placement="top"
+    title="Top"
+    data-content="Top Popover">Top</button>
+
+  <button class="btn btn-warning"
+    data-toggle="popover"
+    data-placement="bottom"
+    title="Bottom"
+    data-content="Bottom Popover">Bottom</button>
+
+  <button class="btn btn-danger"
+    data-toggle="popover"
+    data-placement="left"
+    title="Left"
+    data-content="Left Popover">Left</button>
+
+  <button class="btn btn-info"
+    data-toggle="popover"
+    data-placement="right"
+    title="Right"
+    data-content="Right Popover">Right</button>
+
+  <br><br>
+
+  <!-- 3. Popover on Link -->
+  <h4>3. Popover on Link</h4>
+  <a href="#" class="btn btn-dark"
+    data-toggle="popover"
+    title="Link Popover"
+    data-content="Popover on link">
+    Click Link
+  </a>
+
+  <br><br>
+
+  <!-- 4. HTML Popover -->
+  <h4>4. HTML Popover</h4>
+  <button class="btn btn-secondary"
+    data-toggle="popover"
+    data-html="true"
+    title="<b>Bold Title</b>"
+    data-content="<i>Italic content</i>">
+    HTML Popover
+  </button>
+
+  <br><br>
+
+  <!-- 5. Different Triggers -->
+  <h4>5. Trigger Types</h4>
+
+  <button class="btn btn-primary"
+    data-toggle="popover"
+    data-trigger="hover"
+    title="Hover"
+    data-content="Hover trigger">
+    Hover Me
+  </button>
+
+  <button class="btn btn-success"
+    data-toggle="popover"
+    data-trigger="focus"
+    title="Focus"
+    data-content="Focus trigger">
+    Focus Me
+  </button>
+
+  <button class="btn btn-danger"
+    data-toggle="popover"
+    data-trigger="click"
+    title="Click"
+    data-content="Click trigger">
+    Click Me
+  </button>
+
+  <br><br>
+
+  <!-- 6. Delay -->
+  <h4>6. Delay Popover</h4>
+  <button class="btn btn-warning"
+    data-toggle="popover"
+    data-delay='{"show":500,"hide":200}'
+    title="Delayed"
+    data-content="This popover has delay">
+    Hover with Delay
+  </button>
+
+</div>
+
+<!-- Enable Popovers -->
+<script>
+$(document).ready(function(){
+  $('[data-toggle="popover"]').popover();
+});
+</script>
+
+</body>
+</html>
